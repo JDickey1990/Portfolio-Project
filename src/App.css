@@ -39,22 +39,32 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+/*............Permanent Marker Reacy-Typed Font......................*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/*............ROKKIT Navbar Font......................*/
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200;400&display=swap');
 
 :root {
-  --primary-white: #fff;
-  --primary-green: rgb(11, 88, 11);
-  --primary-dark: rgba(255,255,255,0)
+  --primary-burnt-orange: rgb(197, 138, 12);
+  --primary-white: white;
+  --primary-black: black;
+  --primary-dark: rgba(255,255,255,0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
+
 body {
-  font-family: 'Roboto-Condensed', sans-serif;
+  font-family: 'Rokkitt', serif !important;
 }
 
 /* .logo {
   width: 
 } */
 
-/*............Menu Links..............*/
+/*............Navbar..............*/
+nav {
+  z-index: 2;
+}
 
 nav a.nav-link {
   letter-spacing: 0.0375rem;
@@ -62,9 +72,7 @@ nav a.nav-link {
 }
 
 .navbar-brand {
-  color: var(--primary-white) !important;
-  /* max-width: 17.25rem;
-  height: 4rem; */
+  color: var(--primary-burnt-orange) !important;
 }
 
 nav ul li {
@@ -74,14 +82,98 @@ nav ul li {
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: var(--primary-white) !important;
+  color: var(--primary-burnt-orange) !important;
   border-top: 0.1875rem solid var(--primary-dark);
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-green);
+  border-top: 0.1875rem solid var(--primary-black);
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-green);
+  border-top: 0.1875rem solid var(--primary-black);
+}
+
+/*...................HEADER........................*/
+
+.header-wrapper {
+  position: relative;
+  background: url(diego-arco-rave-p1wxwbFsKQ4-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Rokkitt', serif;
+  color: var(--primary-burnt-orange);
+  z-index: 1;
+}
+
+/*................Typed Text...........................*/
+
+.typed-text {
+  font-size: 5rem;
+  color: var(--primary-white);
+  font-family: 'Permanent Marker', cursive;
+}
+
+@media(max-width: 768px) {
+  .typed-text {
+    font-size: 2.5rem;
+  }
+}
+
+/*................Heading Button...........................*/
+
+.btn-main-heading {
+  border: 1px solid var(--primary-white);
+  color: var(--primary-white);
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  margin: 2rem
+}
+
+.btn-main-heading:hover {
+  text-decoration: none;
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+  transition: .4s ease-in-out;
+
+}
+
+@media(max-width: 768px) {
+  .btn-main-heading {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+}
+
+
+/*................Particles...........................*/
+
+.tsparticles-canvas-el {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width: 768px) {
+  .particles-canvas {
+    display: none;
+
+  }
 }
