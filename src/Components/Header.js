@@ -1,11 +1,11 @@
 import React from 'react';
 import Typed from 'react-typed';
-import Particles from "react-particles-js";
+
 
 const Header = () => {
     return (
       <div className="header-wrapper">
-            <Particles 
+            {/* <Particles 
               className="particles-canvas"
               params={{
                 particles: {
@@ -21,7 +21,7 @@ const Header = () => {
                   }
                 }
               }}
-            />
+            /> */}
           <div className="main-info">
             {/* <h1></h1> */}
             <Typed
