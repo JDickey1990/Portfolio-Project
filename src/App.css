@@ -37,24 +37,22 @@
   }
 }
 
-
-
 /*............Permanent Marker Reacy-Typed Font......................*/
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 /*............ROKKIT Navbar Font......................*/
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@200;400&display=swap");
 
 :root {
   --primary-burnt-orange: rgb(197, 138, 12);
   --primary-white: white;
   --primary-black: black;
-  --primary-dark: rgba(255,255,255,0);
+  --primary-dark: rgba(255, 255, 255, 0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
 }
 
 body {
-  font-family: 'Rokkitt', serif !important;
+  font-family: "Rokkitt", serif !important;
 }
 
 /* .logo {
@@ -86,12 +84,13 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-dark);
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-black);
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-white);
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-black);
+  border-top: 0.1875rem solid var(--primary-white);
 }
 
 /*...................HEADER........................*/
@@ -101,7 +100,7 @@ nav ul li {
   background: url(diego-arco-rave-p1wxwbFsKQ4-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 110vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -115,9 +114,15 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Rokkitt', serif;
+  font-family: "Rokkitt", serif;
   color: var(--primary-burnt-orange);
-  z-index: 1;
+  /* z-index: 1; */
+}
+
+.main-header {
+  text-transform: uppercase;
+  color: var(--primary-white);
+  font-family: "Permanent Marker", cursive;
 }
 
 /*................Typed Text...........................*/
@@ -125,10 +130,10 @@ nav ul li {
 .typed-text {
   font-size: 5rem;
   color: var(--primary-white);
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .typed-text {
     font-size: 2.5rem;
   }
@@ -142,25 +147,24 @@ nav ul li {
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   font-size: 2rem;
-  font-family: 'Permanent Marker', cursive;
-  margin: 2rem
+  font-family: "Permanent Marker", cursive;
+  margin: 2rem;
+  z-index: 3;
 }
 
 .btn-main-heading:hover {
   text-decoration: none;
   background-color: var(--primary-red);
   color: var(--primary-white);
-  transition: .4s ease-in-out;
-
+  transition: 0.4s ease-in-out;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .btn-main-heading {
     font-size: 1rem;
     margin: 1rem;
   }
 }
-
 
 /*................Particles...........................*/
 
@@ -168,12 +172,36 @@ nav ul li {
   position: relative;
   height: 100vh;
   width: 100vw;
-  z-index: 2;
+  z-index: 1;
 }
 
-@media(max-width: 768px) {
-  .particles-canvas {
+@media (max-width: 768px) {
+  .tsparticles-canvas-el {
     display: none;
+  }
+}
 
+/*...................ABOUT ME........................*/
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img {
+  width: 16rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 1px solid var(--primary-burnt-orange);
+}
+
+.about-heading {
+  color: var(--primary-burnt-orange);
+  text-transform: uppercase;
+}
+
+@media (max-width: 468px) {
+  .profile-img {
+    width: 10rem;
   }
 }
