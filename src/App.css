@@ -419,3 +419,9 @@ portfolio-image-popupbox {
 .hyper-link:hover {
   color: var(--primary-red);
 }
+
+@media (max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
