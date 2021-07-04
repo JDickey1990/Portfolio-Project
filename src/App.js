@@ -6,6 +6,7 @@ import AboutMe from "./Components/AboutMe";
 import Services from "./Components/Services";
 import Experience from "./Components/Experience";
 import Portfolio from "./Components/Portfolio";
+import Testimonials from "./Components/Testimonials";
 
 class App extends Component {
   render() {
@@ -14,9 +15,10 @@ class App extends Component {
         <Navbar />
         <Header />
         <AboutMe />
-        <Services/>
-        <Experience/>
-        <Portfolio/>
+        <Services />
+        <Experience />
+        <Portfolio />
+        <Testimonials />
       </div>
     );
   }

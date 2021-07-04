@@ -1,7 +1,7 @@
 import React from "react";
 // IMAGES
 import daydreams from "../Images/daydreams.PNG";
-import tequila from "../Images/espolon-tequila-2aVMD0Pk8lM-unsplash (2).jpg";
+
 // FONT AWESOME
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
