@@ -53,8 +53,7 @@
   --primary-burnt-orange: rgb(197, 138, 12);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
-  --primary-green: green; 
-
+  --primary-green: green;
 }
 
 body {
@@ -597,7 +596,7 @@ textarea.form-control {
   margin: -0.3rem 0;
 }
 
-.error-message{
+.error-message {
   font-weight: 900;
   color: var(--primary-white);
   background: var(--primary-red);
@@ -621,4 +620,27 @@ textarea.form-control {
   .contacts p {
     padding: 0 0.4rem;
   }
+}
+
+/*...................FOOTER........................*/
+
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-burnt-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0%;
 }

@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 
 const Contacts = () => {
   const [successMessage, setSuccessMessage] = useState("");
-  // const { register, handleSubmit, setError } = useForm();
   const {
     register,
     handleSubmit,
