@@ -53,6 +53,8 @@
   --primary-burnt-orange: rgb(197, 138, 12);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-green: green; 
+
 }
 
 body {
@@ -593,6 +595,18 @@ input.form-control {
 
 textarea.form-control {
   margin: -0.3rem 0;
+}
+
+.error-message{
+  font-weight: 900;
+  color: var(--primary-white);
+  background: var(--primary-red);
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-white);
+  background: var(--primary-green);
 }
 
 @media (max-width: 768px) {
